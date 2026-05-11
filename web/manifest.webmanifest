@@ -1,0 +1,25 @@
+{
+  "name": "AI News Daily",
+  "short_name": "NewsDigest",
+  "description": "RSS digest reader with FastAPI backend — installable PWA; reuse web/src/lib/api.ts from Expo.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "dir": "ltr",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "categories": ["news", "education"],
+  "icons": [
+    { "src": "/vite.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open digest",
+      "short_name": "Digest",
+      "url": "/",
+      "icons": [{ "src": "/vite.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}
