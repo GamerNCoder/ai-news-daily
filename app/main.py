@@ -15,10 +15,12 @@ from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
+from app.cors_settings import cors_allow_origins
+
 app = FastAPI(title="AI News Daily", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=cors_allow_origins(),
     allow_methods=["*"],
     allow_headers=["*"],
 )
