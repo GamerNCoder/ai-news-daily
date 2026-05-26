@@ -2,6 +2,12 @@
 
 RSS → **keyword interest filter** → ranked JSON. Designed for a future **daily email** with strict opt-in.
 
+## Status (May 2026)
+
+- **MVP**: FastAPI digest + Vite web UI.
+- **No sending email**: only `/email-preview` exists (safe by default).
+- **CORS**: configure production allowlist via `CORS_ALLOW_ORIGINS` (see `.env.example`).
+
 ## Ethics / product
 
 - **No email is sent** from this repo. Wire [Resend](https://resend.com) or similar only after:
